@@ -1,0 +1,3 @@
+/home/herman/proj/sdl2_tut/bin/Lesson0
+/home/herman/proj/sdl2_tut/bin/Lesson0.1
+/home/herman/proj/sdl2_tut/bin/Lesson1

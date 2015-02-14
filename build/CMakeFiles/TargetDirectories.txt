@@ -1,0 +1,3 @@
+/home/herman/proj/sdl2_tut/build/Lesson0/CMakeFiles/Lesson0.dir
+/home/herman/proj/sdl2_tut/build/Lesson1/CMakeFiles/Lesson1.dir
+/home/herman/proj/sdl2_tut/build/Lesson0.1/CMakeFiles/Lesson0.1.dir

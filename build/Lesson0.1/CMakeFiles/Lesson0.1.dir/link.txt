@@ -1,0 +1,1 @@
+/usr/bin/c++    -Wall -Wextra -pedantic -std=c++11  -Wall -Wextra -pedantic -std=c++11 -g -g   CMakeFiles/Lesson0.1.dir/src/main.cpp.o  -o Lesson0.1 -rdynamic -lSDL2 -lpthread 

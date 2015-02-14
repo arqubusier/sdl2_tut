@@ -1,0 +1,57 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/herman/proj/sdl2_tut/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec4099534303/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec4099534303.dir/build.make CMakeFiles/cmTryCompileExec4099534303.dir/build
+make[1]: Går till katalogen ”/home/herman/proj/sdl2_tut/build/CMakeFiles/CMakeTmp”
+/usr/bin/cmake -E cmake_progress_report /home/herman/proj/sdl2_tut/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec4099534303.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec4099534303.dir/CheckSymbolExists.c.o   -c /home/herman/proj/sdl2_tut/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTryCompileExec4099534303
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec4099534303.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTryCompileExec4099534303.dir/CheckSymbolExists.c.o  -o cmTryCompileExec4099534303 -rdynamic 
+CMakeFiles/cmTryCompileExec4099534303.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
+collect2: fel: ld returnerade avslutningsstatus 1
+CMakeFiles/cmTryCompileExec4099534303.dir/build.make:88: receptet för målet ”cmTryCompileExec4099534303” misslyckades
+make[1]: Lämnar katalogen ”/home/herman/proj/sdl2_tut/build/CMakeFiles/CMakeTmp”
+make[1]: *** [cmTryCompileExec4099534303] Fel 1
+Makefile:118: receptet för målet ”cmTryCompileExec4099534303/fast” misslyckades
+make: *** [cmTryCompileExec4099534303/fast] Fel 2
+
+File /home/herman/proj/sdl2_tut/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/herman/proj/sdl2_tut/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec256277483/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec256277483.dir/build.make CMakeFiles/cmTryCompileExec256277483.dir/build
+make[1]: Går till katalogen ”/home/herman/proj/sdl2_tut/build/CMakeFiles/CMakeTmp”
+/usr/bin/cmake -E cmake_progress_report /home/herman/proj/sdl2_tut/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec256277483.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec256277483.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.1/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec256277483
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec256277483.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   CMakeFiles/cmTryCompileExec256277483.dir/CheckFunctionExists.c.o  -o cmTryCompileExec256277483 -rdynamic -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: fel: ld returnerade avslutningsstatus 1
+CMakeFiles/cmTryCompileExec256277483.dir/build.make:88: receptet för målet ”cmTryCompileExec256277483” misslyckades
+make[1]: Lämnar katalogen ”/home/herman/proj/sdl2_tut/build/CMakeFiles/CMakeTmp”
+make[1]: *** [cmTryCompileExec256277483] Fel 1
+Makefile:118: receptet för målet ”cmTryCompileExec256277483/fast” misslyckades
+make: *** [cmTryCompileExec256277483/fast] Fel 2
+
+
